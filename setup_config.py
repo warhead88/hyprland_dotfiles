@@ -1,5 +1,6 @@
 from art import tprint
 from modules import conf
+from time import sleep
 import os
 
 tprint('W88 Installer')
