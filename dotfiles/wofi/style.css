@@ -1,0 +1,53 @@
+* {
+	font-family: JetBrainsMono, monospace;
+	outline: None;
+}
+
+window {
+	background-color: #3B4252;
+	border-radius: 10px;
+}
+
+#input {
+	margin: 5px;
+	border-radius: 10px;
+	border: none;
+	background-color: #3B4252;
+	color: white;
+}
+
+#inner-box {
+	background-color: #383C4A;
+	border-radius: 10px;
+}
+
+#outer-box {
+	margin: 2px;
+	padding: 10px;
+	background-color: #383C4A;
+	border-radius: 10px;
+}
+
+#scroll {
+	margin: 5px;
+}
+
+#text {
+	padding: 4px;
+	color: white;
+}
+
+#entry:nth-child(even){
+	background-color: #404552;
+	border-radius: 10px;
+	margin: 5px;
+}
+
+#entry:selected {
+	background-color: #4C566A;
+	border-radius: 10px;
+}
+
+#text:selected {
+	background: transparent;
+}

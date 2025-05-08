@@ -1,0 +1,137 @@
+/* === Waybar Nord Theme === */
+
+* {
+    font-family: JetBrainsMono, FontAwesome, Roboto, sans-serif;
+    font-size: 14px;
+}
+
+window#waybar {
+    background-color: #2E3440; /* nord0 */
+    border: 4px solid #4C566A; /* nord3 */
+    border-radius: 10px;
+    margin: 10px;
+    color: #D8DEE9; /* nord4 */
+    transition: background-color 0.5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+button {
+    border: none;
+    border-radius: 0;
+    box-shadow: inset 0 -3px transparent;
+}
+
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px #D8DEE9; /* nord4 */
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: #4C566A; /* nord3 */
+}
+
+#workspaces button.active {
+    color: #88C0D0; /* nord8 */
+}
+
+#workspaces button.urgent {
+    color: #BF616A; /* nord11 */
+}
+
+#mode {
+    background-color: #3B4252; /* nord1 */
+    box-shadow: inset 0 -3px #D8DEE9;
+}
+
+/* Unified block styles */
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#mpd,
+#language,
+#keyboard-state {
+    padding: 0 10px;
+    margin: 10px;
+    border-radius: 8px;
+    color: #ECEFF4; /* nord6 */
+}
+
+/* Specific module colors */
+#clock 
+#battery            { background-color: #A3BE8C; color: #2E3440; } /* nord14 */
+#battery.charging,
+#battery.plugged    { background-color: #8FBCBB; color: #2E3440; } /* nord7 */
+#battery.critical:not(.charging) {
+    background-color: #BF616A; /* nord11 */
+    animation: blink 0.5s steps(12) infinite alternate;
+}
+
+@keyframes blink {
+    0%   { opacity: 1; }
+    50%  { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+#cpu
+#memory
+#disk
+#temperature
+#temperature.critical
+#backlight
+#network
+#network.disconnected
+#pulseaudio
+#pulseaudio.muted
+#wireplumber
+#wireplumber.muted
+#custom-media
+#mpd
+#mpd.disconnected
+#mpd.stopped
+#mpd.paused
+#idle_inhibitor
+#idle_inhibitor.activated
+#language
+#keyboard-state
+
+#keyboard-state > label {
+    padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad.empty {
+    background-color: transparent;
+}
+
+#tray               { background-color: #4C566A; } /* nord3 */
+#tray > .passive    { -gtk-icon-effect: dim; }
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #BF616A; /* nord11 */
+}
+
+#power-profiles-daemon.performance { color: #D8DEE9; } /* nord4 */
+#power-profiles-daemon.balanced    { color: #ECEFF4; } /* nord6 */
+#power-profiles-daemon.power-saver { color: #A3BE8C; } /* nord14 */
+

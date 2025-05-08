@@ -1,0 +1,75 @@
+* {
+  * font-family: JetBrainsMono;
+  * }
+
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #2a2f3b;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+h1 {
+  /* display: flex; */
+  justify-content: center;
+  margin-top: 150px;
+  font-size: 72px;
+  align-items: center;
+  color: #B48EAD;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color:	#434C5E;
+  border: solid 4px;
+  border-radius: 6px;
+  border-color: #B48EAD;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 60px;
+  height: 80px;
+}
+
+.btn:hover {
+  background-color: #B48EAD;
+}
+
+.typing {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #B48EAD;
+  animation: typing 0.8s steps(7) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 7ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
