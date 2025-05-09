@@ -44,7 +44,6 @@ power-profiles-daemon
 prismlauncher
 qt6ct
 ranger
-steam-native-runtime
 telegram-desktop
 ttf-font-awesome
 ttf-jetbrains-mono
