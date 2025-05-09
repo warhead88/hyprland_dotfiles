@@ -24,3 +24,4 @@ deactivate
 rm -R instenv
 mkdir /home/$USER/wallpapers
 cp -r bin_dir ~/bin
+sudo systemctl enable --now ufw
