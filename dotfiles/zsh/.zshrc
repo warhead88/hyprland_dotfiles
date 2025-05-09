@@ -102,6 +102,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias wallset="source ~/bin/change_wallpaper.sh"
+alias cls="clear"
+
 export QT_QPA_PLATFORMTHEME=qt6ct
 export XDG_SESSION_TYPE=wayland
 export QT_QPA_PLATFORM=wayland
