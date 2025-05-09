@@ -22,3 +22,5 @@ clear
 python3 setup_config.py
 deactivate
 rm -R instenv
+mkdir /home/$USER/wallpapers
+cp -r bin_dir ~/bin
