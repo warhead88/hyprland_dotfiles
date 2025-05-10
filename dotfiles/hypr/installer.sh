@@ -1,5 +1,9 @@
+#!/usr/bin/env bash
+
 if [ -d "/home/$USER/.config/hypr" ]; then
   rm -R /home/$USER/.config/hypr
 fi
 
-cp -R hyprland.conf /home/$USER/.config/hypr
+mkdir -p /home/$USER/.config/hypr
+cp hyprland.conf /home/$USER/.config/hypr/hyprland.conf
+cp hyprpaper.conf /home/$USER/.config/hypr/hyprpaper.conf
