@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+clear
+
 cat ascii
 
 read -p "Proceed with installation? [Y,N]: " pr
