@@ -8,7 +8,7 @@ read -p "Proceed with installation? [Y,N]: " pr
 
 if [ "$pr" = "y" ] || [ "$pr" = "Y" ]; then
   ./installer.sh
-  ./configs.sh
+  exec bash ./configs.sh
   reboot
 else
   echo "Leaving..."
