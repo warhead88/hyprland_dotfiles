@@ -20,6 +20,5 @@ clear
 mkdir /home/$USER/wallpapers
 cp -r bin_dir ~/bin
 sudo systemctl enable --now ufw
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ./configs.sh
-reboot
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
