@@ -20,5 +20,5 @@ clear
 mkdir /home/$USER/wallpapers
 cp -r bin_dir ~/bin
 sudo systemctl enable --now ufw
-./configs.sh
+echo "1" > spec_files/condition
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

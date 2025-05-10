@@ -2,12 +2,18 @@
 
 clear
 
-cat ascii
+cat spec_files/ascii
+
+echo message
 
 read -p "Proceed with installation? [Y,N]: " pr
 
-if [ "$pr" = "y" ] || [ "$pr" = "Y" ]; then
-  ./installer.sh
+if [ ! -s "spec_files/condition" ]; then
+  if [ "$pr" = "y" ] || [ "$pr" = "Y" ]; then
+    ./installer.sh
+  else
+    echo "Leaving..."
+  fi
 else
-  echo "Leaving..."
+  ./configs.sh
 fi

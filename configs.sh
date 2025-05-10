@@ -19,3 +19,5 @@ source dotfiles/wofi/installer.sh
 echo "Configuring zsh..."
 source dotfiles/zsh/installer.sh
 echo "Configuration completed!"
+
+echo "Good for you!" > spec_files/message
