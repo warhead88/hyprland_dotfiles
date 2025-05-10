@@ -30,6 +30,8 @@ if [ -d "/home/$USER/.config/wofi" ]; then
   rm -R /home/$USER/.config/wofi
 fi
 
+rm ~/.zshrc
+
 cp -R dotfiles/hypr /home/$USER/.config/
 cp -R dotfiles/fastfetch /home/$USER/.config/
 cp -R dotfiles/firefox /home/$USER/.config/
@@ -38,3 +40,5 @@ cp -R dotfiles/mako /home/$USER/.config/
 cp -R dotfiles/nvim /home/$USER/.config/
 sudo cp -R dotfiles/waybar /home/$USER/.config/
 cp -R dotfiles/wofi /home/$USER/.config/
+cp -R dotfiles/zsh/nord-extended $ZSH/themes/nord-extended
+cp dotfiles/zsh/.zshrc ~/.zshrc
