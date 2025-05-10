@@ -1,5 +1,7 @@
+#!/usr/bin/env bash
+
 sudo pacman -Syu --noconfirm
-sudo pacman -S --needed - < pkglist.txt
+sudo pacman -S --needed --noconfirm - < pkglist.txt
 
 if ! command -v yay &> /dev/null; then
   echo "Installing 'Yay'..."
