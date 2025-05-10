@@ -5,5 +5,9 @@ if [ -d "/home/$USER/.config/hypr" ]; then
 fi
 
 mkdir -p /home/$USER/.config/hypr
-cp hyprland.conf /home/$USER/.config/hypr/hyprland.conf
-cp hyprpaper.conf /home/$USER/.config/hypr/hyprpaper.conf
+
+dir="$(cd "$(dirname "$0")" && pwd)"
+target_dir=$dir/dotfiles/hypr
+
+cp $target_dir/hyprland.conf /home/$USER/.config/hypr/hyprland.conf
+cp $target_dir/hyprpaper.conf /home/$USER/.config/hypr/hyprpaper.conf

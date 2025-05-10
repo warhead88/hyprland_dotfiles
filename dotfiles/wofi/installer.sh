@@ -6,4 +6,7 @@ fi
 
 mkdir -p /home/$USER/.config/wofi
 
-cp style.css /home/$USER/.config/wofi
+dir="$(cd "$(dirname "$0")" && pwd)"
+target_dir=$dir/dotfiles/wofi
+
+cp $target_dir/style.css /home/$USER/.config/wofi

@@ -5,4 +5,8 @@ if [ -d "/home/$USER/.config/mako" ]; then
 fi
 
 mkdir -p /home/$USER/.config/mako
-cp config /home/$USER/.config/mako/config
+
+dir="$(cd "$(dirname "$0")" && pwd)"
+target_dir=$dir/dotfiles/mako
+
+cp $target_dir/config /home/$USER/.config/mako/config

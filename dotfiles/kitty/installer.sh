@@ -5,5 +5,9 @@ if [ -d "/home/$USER/.config/kitty" ]; then
 fi
 
 mkdir -p /home/$USER/.config/kitty
-cp kitty.conf /home/$USER/.config/kitty/kitty.conf
-cp nord.conf /home/$USER/.config/kitty/nord.conf
+
+dir="$(cd "$(dirname "$0")" && pwd)"
+target_dir=$dir/dotfiles/kitty
+
+cp $target_dir/kitty.conf /home/$USER/.config/kitty/kitty.conf
+cp $target_dir/nord.conf /home/$USER/.config/kitty/nord.conf

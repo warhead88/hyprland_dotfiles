@@ -4,5 +4,8 @@ if [ -d "/home/$USER/.config/fastfetch" ]; then
   rm -R /home/$USER/.config/fastfetch
 fi
 
+dir="$(cd "$(dirname "$0")" && pwd)"
+target_dir=$dir/dotfiles/fastfetch
+
 mkdir -p /home/$USER/.config/fastfetch
-cp config.jsonc /home/$USER/.config/fastfetch/config.jsonc
+cp $target_dit/config.jsonc /home/$USER/.config/fastfetch/config.jsonc

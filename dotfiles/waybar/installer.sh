@@ -6,5 +6,8 @@ fi
 
 sudo mkdir -p /home/$USER/.config/waybar
 
-sudo cp config.jsonc /home/$USER/.config/waybar/config.jsonc
-sudo cp style.css /home/$USER/.config/waybar/styke.css
+dir="$(cd "$(dirname "$0")" && pwd)"
+target_dir=$dir/dotfiles/waybar
+
+sudo cp $target_dir/config.jsonc /home/$USER/.config/waybar/config.jsonc
+sudo cp $target_dir/style.css /home/$USER/.config/waybar/styke.css
