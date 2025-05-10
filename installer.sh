@@ -1,4 +1,3 @@
-echo "Starting installing process."
 sudo pacman -Syu --noconfirm
 sudo pacman -S --needed - < pkglist.txt
 

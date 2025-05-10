@@ -9,6 +9,7 @@ read -p "Proceed with installation? [Y,N]: " pr
 if [ "$pr" = "y" ] || [ "$pr" = "Y" ]; then
   source installer.sh
   source configs.sh
+  reboot
 else
   echo "Leaving..."
 fi
