@@ -15,14 +15,8 @@ else
   echp "'Yay' has already installed."
 fi
 
-python -m venv instenv
-source instenv/bin/activate
-pip install art
 clear
-deactivate
-rm -R instenv
 mkdir /home/$USER/wallpapers
 cp -r bin_dir ~/bin
 sudo systemctl enable --now ufw
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-python3 setup_config.py
