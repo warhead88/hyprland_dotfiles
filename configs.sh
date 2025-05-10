@@ -20,4 +20,4 @@ echo "Configuring zsh..."
 source dotfiles/zsh/installer.sh
 echo "Configuration completed!"
 
-echo "Good for you!" > spec_files/message
+echo "Now you have to reboot (preferably) or relogin"
