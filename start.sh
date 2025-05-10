@@ -4,7 +4,7 @@ clear
 
 cat spec_files/ascii
 
-echo message
+cat spec_files/message
 
 read -p "Proceed with installation? [Y,N]: " pr
 
