@@ -12,4 +12,4 @@ cp -R icons /home/$USER/.config/firefox/icons
 cp index.html /home/$USER/.config/firefox/index.html
 cp private.html /home/$USER/.config/firefox/private.html
 cp style.css /home/$USER/.config/firefox/style.css
-cp style_private.css /home/$USER/.config/firefox/style.css
+cp style_private.css /home/$USER/.config/firefox/style_private.css
