@@ -1,5 +1,5 @@
-* {
-  * font-family: JetBrainsMono;
+@font-face {
+  * font-family: JetBrains Mono;
   * }
 
 html {
@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  font-family: JetBrains Mono;
   margin: 0;
   height: 100vh;
   display: flex;

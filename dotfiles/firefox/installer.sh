@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ -d "/home/$USER/.config/firefox"]; then
+if [ -d "/home/$USER/.config/firefox" ]; then
   rm -R /home/$USER/.config/firefox
 fi
 
