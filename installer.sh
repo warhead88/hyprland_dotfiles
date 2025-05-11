@@ -5,7 +5,7 @@ sudo pacman -Syu --noconfirm
 read -p "Nvidia videocard? [Y/N]: " pr
 
 if [ "$pr" = "y" ] || [ "$pr" = "Y" ]; then
-  sudo pacman -S nvidia-dkms nvidia-utils
+  sudo pacman -S --noconfirm nvidia-dkms nvidia-utils
 fi
 
 sudo pacman -S --needed --noconfirm - < pkglist.txt
