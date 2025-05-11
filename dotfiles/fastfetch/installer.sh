@@ -9,4 +9,4 @@ target_dir=$dir/dotfiles/fastfetch
 
 mkdir -p /home/$USER/.config/fastfetch
 cp $target_dir/config.jsonc /home/$USER/.config/fastfetch/config.jsonc
-cp $traget_dir/art /home/$USER/.config/fastfetch/art
+cp $target_dir/art /home/$USER/.config/fastfetch/art

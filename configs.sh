@@ -18,6 +18,8 @@ echo "Configuring wofi..."
 source dotfiles/wofi/installer.sh
 echo "Configuring zsh..."
 source dotfiles/zsh/installer.sh
+echo "Moving wallpapers..."
+source dotfiles/wallpapers_installer.sh
 echo "Configuration completed!"
 
 echo "Now you have to reboot (preferably) or relogin"
