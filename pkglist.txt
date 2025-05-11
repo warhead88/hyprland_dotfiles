@@ -6,7 +6,6 @@ dolphin
 efibootmgr
 fastfetch
 firefox
-git
 grub
 htop
 hyprland
