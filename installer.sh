@@ -30,4 +30,5 @@ sudo systemctl enable --now ufw
 echo "1" > spec_files/condition
 echo "Good for you!" > spec_files/message
 git clone --depth 1 https://github.com/EliverLara/Nordic /usr/share/themes
+gsettings set org.gnome.desktop.interface gtk-theme Nordic
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
