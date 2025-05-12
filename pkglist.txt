@@ -2,7 +2,7 @@ base
 base-devel
 bash-completion
 cava
-dolphin
+thunar
 efibootmgr
 fastfetch
 firefox
