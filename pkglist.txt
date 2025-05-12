@@ -3,6 +3,8 @@ base-devel
 bash-completion
 cava
 thunar
+gvfs
+eog
 efibootmgr
 fastfetch
 firefox
