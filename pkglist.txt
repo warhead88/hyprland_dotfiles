@@ -8,6 +8,7 @@ eog
 efibootmgr
 fastfetch
 firefox
+libreoffice-fresh
 grub
 htop
 hyprland
