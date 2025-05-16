@@ -5,6 +5,11 @@ cava
 thunar
 gvfs
 eog
+tumbler
+ffmpegthumbnailer
+libopenraw
+poppler-glib
+swww
 efibootmgr
 fastfetch
 firefox
@@ -12,7 +17,6 @@ libreoffice-fresh
 grub
 htop
 hyprland
-hyprpaper
 hyprpicker
 hyprpolkitagent
 hyprsunset
