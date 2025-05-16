@@ -20,6 +20,8 @@ echo "Configuring zsh..."
 source dotfiles/zsh/installer.sh
 echo "Moving wallpapers..."
 source dotfiles/wallpapers_installer.sh
+echo "Configuring cursor..."
+source dotfiles/cursor/installer.sh
 echo "Configuration completed!"
 
 echo "Now you have to reboot (preferably) or relogin"
